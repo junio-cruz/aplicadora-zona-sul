@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -8,40 +8,40 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  :root{
-    --white:#fff;
-    --black:#000;
-    --gray08:#FCFCFC;
-    --gray10:#F8F8F8;
-    --gray15:#F5F5F5;
-    --gray30:#E4E4E4;
-    --gray5:#F3F3F3;
-    --gray20:#E8E8E8;
+  :root {
+    --white: #fff;
+    --black: #000;
+    --gray08: #FCFCFC;
+    --gray10: #F8F8F8;
+    --gray15: #F5F5F5;
+    --gray30: #E4E4E4;
+    --gray5: #F3F3F3;
+    --gray20: #E8E8E8;
     --gray100: rgba(0, 0, 0, 0.1);
-    --gray200:#EDEDED;
+    --gray200: #EDEDED;
     --gray300: #C4C4C4;
     --gray400: rgba(0, 0, 0, 0.5);
     --gray500: #717171;
     --gray600: rgba(0, 0, 0, 0.6);
-    --grayRgb08:rgba(0, 0, 0, 0.8);
+    --grayRgb08: rgba(0, 0, 0, 0.8);
     --gray650: #575757;
-    --gray700:#424242;
-    --gray800:#333;
+    --gray700: #424242;
+    --gray800: #333;
     --primary: #FF465C;
     --primaryShadow: #FF001E;
     --secondary: #3478f7;
-    --secondaryShadow:#1362F3;
+    --secondaryShadow: #1362F3;
     --disabled: rgba(0, 0, 0, 0.4);
-    --info:#007AFF;
-    --success:#00CA6A;
-    --error:#c53030;
-    --waiting:#EC5D0D;
-    --secondaryRgba:rgba(52, 120, 247, 0.2);
+    --info: #007AFF;
+    --success: #00CA6A;
+    --error: #c53030;
+    --waiting: #EC5D0D;
+    --secondaryRgba: rgba(52, 120, 247, 0.2);
     --primaryRgba: rgba(255, 70, 92, 0.2);
     --successRgba: rgba(0, 202, 106, 0.2);
     --waitingRgba: rgba(236, 93, 13, 0.2);
 
-    --fontSizeSuperBigTitle:  3.5rem;
+    --fontSizeSuperBigTitle: 3.5rem;
     --fontH1: 5.5rem;
     --fontH2: 3rem;
     --fontH3: 2.5rem;
@@ -50,15 +50,19 @@ export default createGlobalStyle`
 
   }
 
-  @media (max-width: 1080px){
-    html{
+  html, body, #__next {
+    height: 100%;
+  }
+
+  @media (max-width: 1080px) {
+    html {
       font-size: 93.75%;
       scroll-behaviour: smooth;
     }
   }
 
-  @media (max-width: 720px){
-    html{
+  @media (max-width: 720px) {
+    html {
       font-size: 87.5%;
     }
   }
@@ -91,8 +95,8 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-  input, select, textarea{
-    color:var(--gray800) !important;
+  input, select, textarea {
+    color: var(--gray800) !important;
   }
 
   input:-webkit-autofill,
@@ -100,3 +104,4 @@ export default createGlobalStyle`
     transition: background-color 600000s 0s, color 600000s 0s;
   }
 `;
+export default GlobalStyle;

@@ -6,11 +6,11 @@ export const Container = styled.main`
   justify-content: space-between;
 `;
 
-export const Content = styled.div`;
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
+
   border: 5px solid blue;
 `;
