@@ -18,6 +18,7 @@ export default class MyDocument extends Document {
           enhanceApp: (App) => (props) =>
             sheet.collectStyles(<App {...props} />)
         });
+
       const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
@@ -33,9 +34,9 @@ export default class MyDocument extends Document {
     }
   }
 
-  render(): JSX.Element {
+  render(): any {
     return (
-      <Html lang="pt-BR">
+      <Html lang="en">
         <Head />
         <body>
           <Main />

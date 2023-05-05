@@ -1,16 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
+  margin: 4.5rem 0 auto;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 `;
 
 export const Content = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  border: 5px solid blue;
+  flex-direction: row;
+  align-self: center;
+  gap: 1rem;
 `;

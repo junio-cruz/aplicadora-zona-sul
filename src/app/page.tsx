@@ -1,6 +1,7 @@
+'use client';
 import Head from 'next/head';
-import Header from '../components/Header';
 import { Container, Content } from '../styles/home';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
@@ -12,9 +13,7 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Header />
-      <Content>
-        <h1>Aplicadora Zona Sul</h1>
-      </Content>
+      <Content></Content>
     </Container>
   );
 }
