@@ -9,7 +9,7 @@ interface HomeSectionProps {
 
 export default function HomeSection({ title, children }: HomeSectionProps) {
   return (
-    <Container>
+    <Container withHeader={!!title}>
       {title && (
         <header>
           <h2>{title}</h2>
