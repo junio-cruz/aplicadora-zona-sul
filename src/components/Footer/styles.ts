@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.footer`
   display: flex;
@@ -13,4 +13,3 @@ export const Container = styled.footer`
   background: var(--secondary);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 `;
-
