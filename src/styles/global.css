@@ -24,12 +24,12 @@
   --gray650: #575757;
   --gray700: #424242;
   --gray800: #333;
-  --primary: #FFA844;
-  --primaryShadow: #FF001E;
-  --secondary: #4169e1;
+  --primary: #FFA119;
+  --primaryShadow: #EC5D0D;
+  --secondary: #007AFF;
   --secondaryShadow: #1362F3;
   --disabled: rgba(0, 0, 0, 0.4);
-  --info: #007AFF;
+  --info: #4169e1;
   --success: #00CA6A;
   --error: #c53030;
   --waiting: #EC5D0D;
@@ -68,6 +68,7 @@ body {
   background: var(--white);
   color: var(--black);
   -webkit-font-smoothing: antialiased;
+
 }
 
 body, input, textarea, select, a, label {

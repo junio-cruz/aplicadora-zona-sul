@@ -7,10 +7,10 @@ export const Container = styled.header`
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   width: 100vw;
-  height: 4.5rem;
+  height: 4rem;
 
   @media (max-width: 768px) {
     padding: 0 2rem;
@@ -21,10 +21,11 @@ export const Container = styled.header`
   z-index: 999;
 `;
 export const Content = styled.div`
-  max-width: 75rem;
+  width: 100%;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 5rem;
 `;
 export const LogoContainer = styled.div`
@@ -37,18 +38,19 @@ export const LogoContainer = styled.div`
     font-style: italic;
     font-weight: 800;
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 1.8rem;
+    color: var(--white);
+  }
 `;
 export const NavigationContainer = styled.nav`
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
 `;
-export const NavigationItem = styled.div`
+export const NavigationItem = styled.a`
   font-style: normal;
   font-weight: 800;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 1.8rem;
 `;
